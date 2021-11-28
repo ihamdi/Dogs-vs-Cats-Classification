@@ -17,9 +17,10 @@ After importing libraries, the code will ask you for the number of epochs, dropo
 The model quickly reaches a validation and testing accuracy of 90% (within 3 epochs). Densenet121 seems to be quite powerful for this task. Even with 20% dropout, the model accuracy passes 90% at the 3rd epoch and starts overtraining.
 
 
-![Training](https://user-images.githubusercontent.com/93069949/143770472-3fc935a6-f4be-4490-bcf3-f2d22ee3416f.png)
+![Training](https://user-images.githubusercontent.com/93069949/143770982-651952d3-30db-43dc-93ec-efeca15f76fe.png)
 
-![Validation](https://user-images.githubusercontent.com/93069949/143770478-40ac9cba-f4bf-4968-80cf-208f8c1f1101.png)
+![Validation](https://user-images.githubusercontent.com/93069949/143770984-e963d341-6639-4857-950a-ceb15eecb307.png)
+
 
 ### Background:
 This was created purely to learn the inner workings of Python and Pytorch, therefore only the training data is utilized.
