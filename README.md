@@ -1,4 +1,4 @@
-# Dogs-vs-Cats-Classification 
+# Dogs vs Cats Classification 
 ### Using Densenet121 model and Adam optimizer on a Jupyter Notebook
 
 ## Installation:
