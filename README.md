@@ -11,7 +11,8 @@ The code is designed to download the data directly from Kaggle and extract it. P
 
 
 ## How to Use:
-After importing libraries, the code will ask you for the number of epochs, dropout rate, batch size, number of workers, learning rate, local path to download data, size of dataset used, and ration for splitting the dataset into training:validation:testing. Afterwards, the program will run and give a summary of each epoch as well as a graph of the training and validation loss and accuracy.
+After importing libraries, the code will ask you for the number of epochs, dropout rate, batch size, number of workers, learning rate, local path to download data, size of dataset used, and ration for splitting the dataset into training:validation:testing. 
+Afterwards, the program will run and give a summary of each epoch as well as a graph of the training and validation loss and accuracy.
 
 ## Results:
 The model quickly reaches a validation and testing accuracy of 90% (within 3 epochs). Densenet121 seems to be quite powerful for this task. Even with 20% dropout, the model accuracy passes 90% at the 3rd epoch and starts overtraining.
