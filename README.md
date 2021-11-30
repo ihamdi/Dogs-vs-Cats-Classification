@@ -64,5 +64,4 @@ This was created purely to learn the inner workings of Python and Pytorch, there
 For any questions or feedback, please feel free to post comments or contact me at ibraheem.hamdi@mbzuai.ac.ae
 
 ---
-
-
+Original [Densenet paper](https://arxiv.org/abs/1608.06993) by Gao Huang, Zhuang Liu, Laurens van der Maaten, Kilian Q. Weinberger on 
