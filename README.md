@@ -34,7 +34,7 @@ pip install -r requirements.txt
 
 5. Download the data:
 
-The code is designed to download the data directly using the Kaggle API and extract it automatically. If you haven't used Kaggle API before, please look at the section at the bottom* on how to download your API key.
+The code is designed to download the data directly using the Kaggle API and extract it automatically. If you haven't used Kaggle API before, please look at the section at the bottom on how to download your API key.
 
 ## How to Use:
 After importing libraries, you will be asked to input the following:
