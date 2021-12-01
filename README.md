@@ -54,7 +54,8 @@ Densenet121 seems to be quite powerful for this task. Even with 20% dropout, the
 
 Training Loss & Accuracy             |  Validation Loss & Accuracy
 :-------------------------:|:-------------------------:
-![1e6f48393e17_03](https://user-images.githubusercontent.com/93069949/143770982-651952d3-30db-43dc-93ec-efeca15f76fe.png) | ![1e6f48393e17_03_mask](https://user-images.githubusercontent.com/93069949/143770984-e963d341-6639-4857-950a-ceb15eecb307.png)
+<img width="500" src="https://user-images.githubusercontent.com/93069949/144221977-6e011636-ef82-49ba-a895-9469889556d2.jpg"> | <img width="500" src="https://user-images.githubusercontent.com/93069949/144221902-9cd6d94f-97ca-4914-a1f2-191667a3b50b.jpg">
+
 
 ### Background:
 This was created purely to learn the inner workings of Python and Pytorch, therefore only the training data is utilized.
