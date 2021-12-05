@@ -8,20 +8,18 @@
   <img width="1000" src="https://www.purelypetsinsurance.co.uk/media/1138/dog-and-kitten-meeting.jpg">
 </p>
 
-
-
 ## Installation:
 
-1. Download files or clone Github
+1. Clone Github
 ```
 import git
 git.Git("/your/directory/to/clone").clone("git:https://github.com/ihamdi/Dogs-vs-Cats-Classification.git)
 ```
-
+or [download](https://github.com/ihamdi/Dogs-vs-Cats-Classification/archive/refs/heads/main.zip) and extract a copy of the files.
 
 2. Create conda environment
 ```
-conda create --name DogsVsCats ipykernel
+conda create --name env-name ipykernel
 ```
 
 3. Install [PyTorch](https://pytorch.org/get-started/locally/)
@@ -32,12 +30,17 @@ conda create --name DogsVsCats ipykernel
 pip install -r requirements.txt
 ```
 
-5. Download the data:
+5. Download Data:
 
-The code is designed to download the data directly using the Kaggle API and extract it automatically. If you haven't used Kaggle API before, please look at the section at the bottom on how to download your API key.
+The code is designed to download the data directly using the Kaggle API and extract it automatically. If you haven't used Kaggle API before, please take a look at the instructions at the bottom on how to get your API key.
+
+Otherwise, download the train folder from the official [Dogs vs. Cats](https://www.kaggle.com/c/dogs-vs-cats/data) page and extract the contents to the [`train`](https://github.com/ihamdi/Dogs-vs-Cats-Classification/tree/main/train) directory.
+
+## Dataset:
+Data is obtained from Kaggle's [Dogs vs. Cats](https://www.kaggle.com/c/dogs-vs-cats/data) competition. The train.zip archive contains 25,000 images of dogs and cats. The code follows labeling of cat = 0 and dog = 1 required by the competition.
 
 ## How to Use:
-After importing libraries, you will be asked to input the following:
+After choosing to Run All cells, you will be asked to input the following:
 1. Number of epochs
 2. Dropout rate
 3. Batch size
@@ -47,7 +50,7 @@ After importing libraries, you will be asked to input the following:
 7. Amount of dataset used
 8. Ratio for splitting the dataset (into training : validation : testing)
  
-Afterwards, the program will run, giving a summary after epoch as well as a graph of the training and validation losses and accuracies.
+Afterwards, the program will run and give a summary after epoch, as well as a graph of the training and validation losses and accuracies.
 
 ## Results:
 Densenet121 seems to be quite powerful for this task. Even with 20% dropout, the model accuracy passes 90% by the 3rd epoch and starts overtraining.
@@ -58,7 +61,7 @@ Training Loss & Accuracy             |  Validation Loss & Accuracy
 
 
 ### Background:
-This was created purely to learn the inner workings of Python and Pytorch, therefore only the training data is utilized.
+This was done purely for learning purposes and to get more familiar with Pytorch, therefore only the training data is used and no submission is made to the competition.
 
 ---
 
