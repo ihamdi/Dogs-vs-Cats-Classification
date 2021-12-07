@@ -8,50 +8,57 @@
   <img width="1000" src="https://www.purelypetsinsurance.co.uk/media/1138/dog-and-kitten-meeting.jpg">
 </p>
 
+
+
 ## Installation:
 
-1. Clone Github
+1. Download files or clone Github
 ```
 import git
 git.Git("/your/directory/to/clone").clone("git:https://github.com/ihamdi/Dogs-vs-Cats-Classification.git)
 ```
-or [download](https://github.com/ihamdi/Dogs-vs-Cats-Classification/archive/refs/heads/main.zip) and extract a copy of the files.
+
 
 2. Create conda environment
 ```
-conda create --name env-name ipykernel
+conda create --name DogsVsCats ipykernel
 ```
 
 3. Install [PyTorch](https://pytorch.org/get-started/locally/)
 
 
-4. Install Detectron2:
-Visit the [Installation](https://detectron2.readthedocs.io/en/latest/tutorials/install.html) to install Detectron2 according to your operating system and Pytorch/Cudatoolkit version.
-
-For example, I had to run the following line on my Linux machine with Pytorch 1.10.0 and Cudatoolkit 10.2:
-```
-python -m pip install detectron2 -f   https://dl.fbaipublicfiles.com/detectron2/wheels/cu102/torch1.10/index.html
-```
-
-5. Install dependencies:
+4. Install dependencies:
 ```
 pip install -r requirements.txt
 ```
 
-## Dataset:
-Images for custom dataset were obtained from Google, and the masks were created and exported to json using [VGG Image Annotator](https://www.robots.ox.ac.uk/~vgg/software/via/via.html). The dataset has a total of 41 images: 29 for training and 12 for validation.
+5. Download the data:
+
+The code is designed to download the data directly using the Kaggle API and extract it automatically. If you haven't used Kaggle API before, please look at the section at the bottom on how to download your API key.
 
 ## How to Use:
-Press Run All on the Jupyter Notebook to load the data and then train and validate a model on the dataset.
-
-If you'd like to create and use your own custom dataset, all you have to do is follow the same directory structure and place the json files produced by [VGG Image Annotator](https://www.robots.ox.ac.uk/~vgg/software/via/via.html) in the corresponding folder. The Notebook is specifically designed to handle the json files produced by that program.
+After importing libraries, you will be asked to input the following:
+1. Number of epochs
+2. Dropout rate
+3. Batch size
+4. Number of workers
+5. Learning rate
+6. Local path (to download data)
+7. Amount of dataset used
+8. Ratio for splitting the dataset (into training : validation : testing)
+ 
+Afterwards, the program will run, giving a summary after epoch as well as a graph of the training and validation losses and accuracies.
 
 ## Results:
+Densenet121 seems to be quite powerful for this task. Even with 20% dropout, the model accuracy passes 90% by the 3rd epoch and starts overtraining.
 
+Training Loss & Accuracy             |  Validation Loss & Accuracy
+:-------------------------:|:-------------------------:
+<img width="500" src="https://user-images.githubusercontent.com/93069949/144221977-6e011636-ef82-49ba-a895-9469889556d2.jpg"> | <img width="500" src="https://user-images.githubusercontent.com/93069949/144221902-9cd6d94f-97ca-4914-a1f2-191667a3b50b.jpg">
 
 
 ### Background:
-This was done purely for learning purposes (and fun) and to get more familiar with Detectron2. The car model Lada was used simply because it was the easiest to annotate due to its flat surfaces.
+This was created purely to learn the inner workings of Python and Pytorch, therefore only the training data is utilized.
 
 ---
 
@@ -62,8 +69,14 @@ For any questions or feedback, please feel free to post comments or contact me a
 
 ### References:
 
-[Detectron2](https://github.com/facebookresearch/detectron2)'s Github page by Facebook Research.
+[Densenet paper](https://arxiv.org/abs/1608.06993) by Gao Huang, Zhuang Liu, Laurens van der Maaten, Kilian Q. Weinberger.
 
-[AarohiSingla](https://github.com/AarohiSingla/Detectron2-Tutorial)'s code was used as base.
+[[pytorch] cat vs dog](https://www.kaggle.com/jaeboklee/pytorch-cat-vs-dog) code from Kaggle was used to learn using Pytorch.
 
-[VGG Image Annotator](https://www.robots.ox.ac.uk/~vgg/software/via/) by Visual Geometry Group at University of Oxford.
+---
+#### *Using Kaggle's API
+![image](https://user-images.githubusercontent.com/93069949/144188576-d457568e-7cd2-42f2-ba08-9c41143d674d.png)
+
+![image](https://user-images.githubusercontent.com/93069949/144188635-705e1e29-92ae-4aba-be66-0e1d2e1c29ca.png)
+
+![image](https://user-images.githubusercontent.com/93069949/144188696-f535f9c8-3ed8-4e1b-8f0d-179d7e5be2a2.png)
