@@ -8,8 +8,6 @@
   <img width="1000" src="https://www.purelypetsinsurance.co.uk/media/1138/dog-and-kitten-meeting.jpg">
 </p>
 
-
-
 ## Installation:
 
 1. Download files or clone Github
@@ -34,7 +32,7 @@ pip install -r requirements.txt
 
 5. Download the data:
 
-The code is designed to download the data directly using the Kaggle API and extract it automatically. If you haven't used Kaggle API before, please look at the section at the bottom on how to download your API key.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The code is designed to download the data directly using the Kaggle API and extract it automatically. If you haven't used Kaggle API before, please look at the section at the bottom on how to download your API key.
 
 ## How to Use:
 After importing libraries, you will be asked to input the following:
