@@ -16,27 +16,31 @@
 import git
 git.Git("/your/directory/to/clone").clone("git:https://github.com/ihamdi/Dogs-vs-Cats-Classification.git)
 ```
-
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; or [download](https://github.com/ihamdi/Dogs-vs-Cats-Classification/archive/refs/heads/main.zip) and extract a copy of the files.
 
 2. Create conda environment
 ```
-conda create --name DogsVsCats ipykernel
+conda create --name env-name ipykernel
 ```
 
-3. Install [PyTorch](https://pytorch.org/get-started/locally/)
+3. Install [PyTorch](https://pytorch.org/get-started/locally/) according to your machine. For example:
+```
+conda install pytorch torchvision torchaudio cudatoolkit=10.2 -c pytorch
+```
 
-
-4. Install dependencies:
+4. Install dependencies from [`requirements.txt`](https://github.com/ihamdi/Dogs-vs-Cats-Classification/blob/main/requirements.txt) file:
 ```
 pip install -r requirements.txt
 ```
 
 5. Download the data:
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The code is designed to download the data directly using the Kaggle API and extract it automatically. If you haven't used Kaggle API before, please look at the section at the bottom on how to download your API key.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The code is designed to download the data using the Kaggle API and extract it automatically. If you haven't used Kaggle API before, please look at the section at the bottom on how to download your API key.
+  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Alternatively, you can download the data from the official [Dogs vs. Cats](https://www.kaggle.com/c/dogs-vs-cats/data) competition page and extract train.zip to the [`train`](https://github.com/ihamdi/Dogs-vs-Cats-Classification/tree/main/train) folder.
 
 ## How to Use:
-After importing libraries, you will be asked to input the following:
+Click Run All for the [`pytorch-cat-vs-dog.ipynb`](https://github.com/ihamdi/Dogs-vs-Cats-Classification/blob/main/pytorch-cat-vs-dog.ipynb) Jupyter Notebook. After the necessary libraries are imported, you will be asked to input the following:
 1. Number of epochs
 2. Dropout rate
 3. Batch size
@@ -46,10 +50,10 @@ After importing libraries, you will be asked to input the following:
 7. Amount of dataset used
 8. Ratio for splitting the dataset (into training : validation : testing)
  
-Afterwards, the program will run, giving a summary after epoch as well as a graph of the training and validation losses and accuracies.
+Afterwards, the program will run, giving a summary after each epoch as well as a graph of the training and validation losses and accuracies.
 
 ## Results:
-Densenet121 seems to be quite powerful for this task. Even with 20% dropout, the model accuracy passes 90% by the 3rd epoch and starts overtraining.
+Densenet121 seems to be quite powerful for this task. Even with 20% dropout, the model accuracy passes 90% by the 3rd epoch and starts overfitting.
 
 Training Loss & Accuracy             |  Validation Loss & Accuracy
 :-------------------------:|:-------------------------:
@@ -57,19 +61,21 @@ Training Loss & Accuracy             |  Validation Loss & Accuracy
 
 
 ### Background:
-This was created purely to learn the inner workings of Python and Pytorch, therefore only the training data is utilized.
+This was created purely to gain hands-on experience of Python and Pytorch. Only the training data is utilized and no submission is made to the competition.
 
 ---
 
 ### Contact:
-For any questions or feedback, please feel free to post comments or contact me at ibraheem.hamdi@mbzuai.ac.ae
+For any questions or feedback, please feel free to post comments/issues or contact me at ibraheem.hamdi@mbzuai.ac.ae
 
 ---
 
 ### References:
-
+  
 [Densenet paper](https://arxiv.org/abs/1608.06993) by Gao Huang, Zhuang Liu, Laurens van der Maaten, Kilian Q. Weinberger.
 
+[Dogs vs. Cats](https://www.kaggle.com/c/dogs-vs-cats/data) competition on [Kaggle](www.kaggle.com).
+  
 [[pytorch] cat vs dog](https://www.kaggle.com/jaeboklee/pytorch-cat-vs-dog) code from Kaggle was used to learn using Pytorch.
 
 ---
