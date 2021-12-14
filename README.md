@@ -73,11 +73,11 @@ For any questions or feedback, please feel free to post comments/issues or conta
 
 ### References:
   
-[Densenet paper](https://arxiv.org/abs/1608.06993) by Gao Huang, Zhuang Liu, Laurens van der Maaten, Kilian Q. Weinberger.
+[[pytorch] cat vs dog](https://www.kaggle.com/jaeboklee/pytorch-cat-vs-dog) was used as base for this code.
 
 [Dogs vs. Cats](https://www.kaggle.com/c/dogs-vs-cats/data) competition on [Kaggle](www.kaggle.com).
   
-[[pytorch] cat vs dog](https://www.kaggle.com/jaeboklee/pytorch-cat-vs-dog) code from Kaggle was used to learn using Pytorch.
+[Densenet paper](https://arxiv.org/abs/1608.06993) by Gao Huang, Zhuang Liu, Laurens van der Maaten, Kilian Q. Weinberger.
 
 ---
 #### Getting Key for Kaggle's API
