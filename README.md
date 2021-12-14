@@ -79,7 +79,7 @@ For any questions or feedback, please feel free to post comments/issues or conta
 [[pytorch] cat vs dog](https://www.kaggle.com/jaeboklee/pytorch-cat-vs-dog) code from Kaggle was used to learn using Pytorch.
 
 ---
-#### *Using Kaggle's API
+#### *Getting Key for Kaggle's API
 ![image](https://user-images.githubusercontent.com/93069949/144188576-d457568e-7cd2-42f2-ba08-9c41143d674d.png)
 
 ![image](https://user-images.githubusercontent.com/93069949/144188635-705e1e29-92ae-4aba-be66-0e1d2e1c29ca.png)
