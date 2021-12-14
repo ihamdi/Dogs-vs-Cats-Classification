@@ -59,6 +59,7 @@ Training Loss & Accuracy             |  Validation Loss & Accuracy
 :-------------------------:|:-------------------------:
 <img width="500" src="https://user-images.githubusercontent.com/93069949/144221977-6e011636-ef82-49ba-a895-9469889556d2.jpg"> | <img width="500" src="https://user-images.githubusercontent.com/93069949/144221902-9cd6d94f-97ca-4914-a1f2-191667a3b50b.jpg">
 
+---
 
 ### Background:
 This was created purely to gain hands-on experience with Python and Pytorch. Only the training data is utilized and no submission is made to the competition.
