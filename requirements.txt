@@ -3,4 +3,3 @@ matplotlib
 kaggle
 tqdm
 scikit-learn
-GitPython
