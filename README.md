@@ -11,17 +11,17 @@
 
 ## Installation:
 
-1. Download files or clone Github
+1. Create conda environment
+```
+conda create --name env-name ipykernel gitpython
+``` 
+
+2. Download files or clone Github
 ```
 from git import Repo
 Repo.clone_from("https://github.com/ihamdi/Dogs-vs-Cats-Classification.git","/your/directory/")
 ```
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; or [download](https://github.com/ihamdi/Dogs-vs-Cats-Classification/archive/refs/heads/main.zip) and extract a copy of the files.
-
-2. Create conda environment
-```
-conda create --name env-name ipykernel
-```
 
 3. Install [PyTorch](https://pytorch.org/get-started/locally/) according to your machine. For example:
 ```
