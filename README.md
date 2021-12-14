@@ -13,8 +13,8 @@
 
 1. Download files or clone Github
 ```
-import git
-git.Git("/your/directory/to/clone").clone("git:https://github.com/ihamdi/Dogs-vs-Cats-Classification.git)
+from git import Repo
+Repo.clone_from("https://github.com/ihamdi/Dogs-vs-Cats-Classification.git","/your/directory/")
 ```
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; or [download](https://github.com/ihamdi/Dogs-vs-Cats-Classification/archive/refs/heads/main.zip) and extract a copy of the files.
 
