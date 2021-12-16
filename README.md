@@ -37,7 +37,7 @@ pip install -r requirements.txt
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The code is designed to download the data using the Kaggle API and extract it automatically. If you haven't used Kaggle API before, please look at the section at the bottom on how to download your API key.
   
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Alternatively, you can download the data from the official [Dogs vs. Cats](https://www.kaggle.com/c/dogs-vs-cats/data) competition page and extract "train.zip" to the [`train`](https://github.com/ihamdi/Dogs-vs-Cats-Classification/tree/main/train) folder. One image is already included with the code since Github doesn't allow empty folders.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Alternatively, you can download the data from the official [Dogs vs. Cats](https://www.kaggle.com/c/dogs-vs-cats/data) competition page and extract "train.zip" to the [`train`](https://github.com/ihamdi/Dogs-vs-Cats-Classification/tree/main/train) folder.
 
 ## How to Use:
 Click Run All for the [`pytorch-cat-vs-dog.ipynb`](https://github.com/ihamdi/Dogs-vs-Cats-Classification/blob/main/pytorch-cat-vs-dog.ipynb) Jupyter Notebook. After the necessary libraries are imported, you will be asked to input the following:
